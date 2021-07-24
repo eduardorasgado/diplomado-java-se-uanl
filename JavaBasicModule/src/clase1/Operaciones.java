@@ -6,7 +6,7 @@ public class Operaciones {
 
 	public static void main(String[] args) {
 		int a, b;
-		Scanner lector = new Scanner(System.in);
+		Scanner lector = new Scanner(System.in); // Instanciar escaner
 		System.out.println("Ingresa el valor de A = ");
 		a = lector.nextInt(); // Usamos nextInt porque se captura un tipo entero
 		System.out.println("Ingresa el valor de B = ");
