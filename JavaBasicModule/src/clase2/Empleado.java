@@ -25,6 +25,23 @@ public class Empleado {
     numEmpleado = 0;
     salario = 0.0;
   }
+  
+  // METODOS ESPECIFICOS
+  
+  public void pedirVacaciones() {
+	  // logica para pedir vacaciones
+	  System.out.println("Método para pedir vacaciones. Pendiente de implementar");
+  }
+  
+  public void registrarAsistencia() {
+	  // logica para registrar asistencia
+	  System.out.println("Método para registrar asistencia. Pendiente de implementar");
+  }
+  
+  public double cobrarSalario() {
+	  System.out.println("Método para cobrar salario. Pendiente de implementar");
+	  return 0.0;
+  }
 
   // GETTERS
 
@@ -48,5 +65,18 @@ public class Empleado {
 
   public void setSalario(double salario) {
     this.salario = salario;
+  }
+
+  public void setNumEmpleado(int numEmpleado) {
+    this.numEmpleado = numEmpleado;
+  }
+
+  public String toString() {
+    return "Nombre: "
+        + nombre
+        + "\nPuesto: "
+        + puesto
+        + "\nNum. Empleado: "
+        + numEmpleado;
   }
 }
