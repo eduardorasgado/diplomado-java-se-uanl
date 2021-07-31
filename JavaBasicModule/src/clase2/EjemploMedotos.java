@@ -10,8 +10,7 @@ public class EjemploMedotos {
      * respectivamente 3. Aplicar 1 metodos de la clase String a cada una y mostrar el resultado en
      * consola
      */
-    String str1;
-    String str2;
+    String str1, str2;
     Scanner scanner = new Scanner(System.in);
 
     System.out.println("Inserte string 1: ");
@@ -19,6 +18,7 @@ public class EjemploMedotos {
 
     System.out.println("Inserte string 2: ");
     str2 = scanner.nextLine();
+    scanner.close();
 
     System.out.println("La concatenación es: " + str1.concat(" ").concat(str2));
     System.out.println("Las cadena2 en mayusculas: " + str2.toUpperCase());
