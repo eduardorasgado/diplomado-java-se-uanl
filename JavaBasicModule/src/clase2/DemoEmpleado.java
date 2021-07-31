@@ -7,6 +7,8 @@ public class DemoEmpleado {
     Empleado e2 = new Empleado("Eduardo", "Developer", 1230484, 17000);
     Empleado e3 = new Empleado("Maricela");
     
+    EmpleadoModificado em1 = new EmpleadoModificado();
+    
     System.out.println("\nEmpleado 1" + e1.toString());
     
     System.out.println("\nEmpleado 2" + e2.toString());
@@ -20,7 +22,6 @@ public class DemoEmpleado {
     System.out.println("\nEmpleado 3" + e3.toString());
     e3.pedirVacaciones();
     
-    EmpleadoModificado em1 = new EmpleadoModificado();
-    em1.toString();
+    System.out.println("\nEmpleado source 1: " + em1.toString());
   }
 }

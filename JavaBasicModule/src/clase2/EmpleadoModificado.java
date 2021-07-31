@@ -6,9 +6,9 @@ package clase2;
  *
  */
 public class EmpleadoModificado {
-  String nombre, puesto;
-  int numEmpleado;
-  double salario;
+  private String nombre, puesto;
+  private int numEmpleado;
+  private double salario;
 
   /**
    * Este constructor sirve para que el empleado se personalice immediatamente
