@@ -8,14 +8,16 @@ package clase3;
 public class EjemploDoWhile {
 
   public static void main(String[] args) {
-    int a = 20;
+    int a = 0;
+    boolean estado = true;
 
-    System.out.println("Antes dl while");
+    System.out.println("Antes del while");
 
     do {
       System.out.println(" Dentro del do while " + a);
       a++;
-    } while (a < 10);
+      if(a == 20) estado = false;
+    } while (estado);
 
     System.out.println("Despues del while");
   }
