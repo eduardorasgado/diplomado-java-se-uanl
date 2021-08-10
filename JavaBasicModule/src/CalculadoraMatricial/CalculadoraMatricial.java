@@ -1,7 +1,6 @@
 /** */
 package CalculadoraMatricial;
 
-import java.util.InputMismatchException;
 import java.util.Scanner;
 
 import static java.util.Objects.nonNull;
@@ -68,7 +67,6 @@ public class CalculadoraMatricial {
           getMatrices(opBaseMessage.concat("SUMA"));
           resultMatrix = matrix1.add(matrix2);
           if (nonNull(resultMatrix)) showResults();
-
           validOperation = true;
           break;
         case 2:
