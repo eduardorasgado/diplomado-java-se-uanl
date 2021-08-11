@@ -10,14 +10,14 @@ import static java.util.Objects.nonNull;
  *
  * @author Eduardo Rasgado Ruiz
  */
-public class CalculadoraMatricial {
+public class MatrixCalculator {
   private MatrixHandler matrix1, matrix2;
   private int[][] resultMatrix;
   private Scanner scanner;
   private int operation;
   private boolean calculatorState;
   /** @param scanner */
-  public CalculadoraMatricial(Scanner scanner) {
+  public MatrixCalculator(Scanner scanner) {
     this.scanner = scanner;
     calculatorState = true;
   }
