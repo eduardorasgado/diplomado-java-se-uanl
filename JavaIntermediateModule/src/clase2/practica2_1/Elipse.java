@@ -6,7 +6,6 @@ public class Elipse extends Figura {
 	private double ejeDos;
 
 	protected Elipse() {
-		super();
 	}
 
 	public Elipse(double ejeUno, double ejeDos) {

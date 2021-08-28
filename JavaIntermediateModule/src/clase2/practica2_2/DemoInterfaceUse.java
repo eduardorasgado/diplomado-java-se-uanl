@@ -1,12 +1,11 @@
-package clase2.practica2_1;
+package clase2.practica2_2;
 
-public class DemoHerenciaPolimorfismo {
+public class DemoInterfaceUse {
 
 	public static void main(String[] args) {
-		DemoHerenciaPolimorfismo demo = new DemoHerenciaPolimorfismo();
-		
-		Elipse elipse = new Elipse(3, 2);
-		Rectangulo rect = new Rectangulo(12, 18);
+		DemoInterfaceUse demo = new DemoInterfaceUse();
+		ElipseImpl elipse = new ElipseImpl(3,  2);
+		RectanguloImpl rect = new RectanguloImpl(12, 18);
 		
 		System.out.println("==> Elipse: ");
 		demo.callPolimorfismo(elipse);
@@ -14,7 +13,7 @@ public class DemoHerenciaPolimorfismo {
 		demo.callPolimorfismo(rect);
 	}
 	
-	public void callPolimorfismo(Figura figure) {
+	public void callPolimorfismo(IFigura figure) {
 		System.out.print("Perimetro: ");
 		System.out.println(figure.perimetro());
 		System.out.print("Area: ");

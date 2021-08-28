@@ -1,13 +1,11 @@
-package clase2.practica2_1;
+package clase2.practica2_2;
 
-public class Rectangulo extends Figura {
+public class RectanguloImpl implements IFigura {
+
 	private double ladoUno;
 	private double ladoDos;
 
-	protected Rectangulo() {
-	}
-
-	protected Rectangulo(double ladoUno, double ladoDos) {
+	public RectanguloImpl(double ladoUno, double ladoDos) {
 		this.ladoUno = ladoUno;
 		this.ladoDos = ladoDos;
 	}
@@ -19,6 +17,7 @@ public class Rectangulo extends Figura {
 
 	@Override
 	public double perimetro() {
+
 		return ladoUno * 2 + ladoDos * 2;
 	}
 
