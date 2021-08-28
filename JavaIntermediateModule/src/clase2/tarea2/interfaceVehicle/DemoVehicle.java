@@ -4,9 +4,9 @@ public class DemoVehicle {
 	public static void main(String[] args) {
 		DemoVehicle prog = new DemoVehicle();
 
-		IVehicle auto = new Auto(4, "Dirt");
-		IVehicle bicicleta = new Bicicleta(2, "Turismo");
-		IVehicle motocicleta = new Motocicleta(2, "Motoneta");
+		IVehicle auto = new AutoImpl(4, "Dirt");
+		IVehicle bicicleta = new BicicletaImpl(2, "Turismo");
+		IVehicle motocicleta = new MotocicletaImpl(2, "Motoneta");
 
 		prog.printVehicle(motocicleta);
 		prog.printVehicle(bicicleta);

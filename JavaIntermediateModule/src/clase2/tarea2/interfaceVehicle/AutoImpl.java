@@ -1,10 +1,10 @@
 package clase2.tarea2.interfaceVehicle;
 
-public class Auto implements IVehicle {
+public class AutoImpl implements IVehicle {
 	private int ruedas;
 	private String tipo;
 
-	public Auto(int ruedas, String tipo) {
+	public AutoImpl(int ruedas, String tipo) {
 		this.ruedas = ruedas;
 		this.tipo = tipo;
 	}
