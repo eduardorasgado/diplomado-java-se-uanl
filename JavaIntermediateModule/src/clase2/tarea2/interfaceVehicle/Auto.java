@@ -1,22 +1,23 @@
-package clase2.tarea2.abstractVehicle;
+package clase2.tarea2.interfaceVehicle;
 
-public class Motocicleta extends Vehiculo {
+public class Auto implements IVehicle {
 	private int ruedas;
 	private String tipo;
 
-	public Motocicleta(int ruedas, String tipo) {
+	public Auto(int ruedas, String tipo) {
 		this.ruedas = ruedas;
 		this.tipo = tipo;
 	}
 
 	@Override
-	public void acelera() {
-		System.out.println("La motocicleta acelara con " + ruedas + " ruedas...");
+	public void acelerar() {
+		System.out.println("El auto acelara con " + ruedas + " ruedas...");
+
 	}
 
 	@Override
-	public void gira() {
-		System.out.println("La motocicleta tipo " + tipo + " gira...");
+	public void girar() {
+		System.out.println("El auto tipo " + tipo + " gira...");
 	}
 
 	public int getRuedas() {

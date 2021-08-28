@@ -10,6 +10,19 @@ public class DemoVehicle {
 	 */
 	public static void main(String[] args) {
 		DemoVehicle prog = new DemoVehicle();
+		
+		Auto auto = new Auto(4, "Muscle");
+		Bicicleta bicicleta = new Bicicleta(2, "Down Hill");
+		Motocicleta motocicleta = new Motocicleta(2, "GP");
+		
+		prog.printVehicle(auto);
+		prog.printVehicle(bicicleta);
+		prog.printVehicle(motocicleta);
 	}
-
+	
+	public void printVehicle(Vehiculo vehicle) {
+		vehicle.acelera();
+		vehicle.gira();
+		System.out.println();
+	}
 }
