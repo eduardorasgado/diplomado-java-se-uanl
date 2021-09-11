@@ -33,6 +33,7 @@ public class DemoScanner {
 		System.out.println("Introduzca un número: ");
 		ln = sc.nextLong();
 		System.out.println("El num long es: " + ln);
+		
+		sc.close();
 	}
-
 }

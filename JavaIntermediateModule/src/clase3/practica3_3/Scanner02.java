@@ -24,6 +24,7 @@ public class Scanner02 {
 			while ((strCurrentLine = br.readLine()) != null) {
 				System.out.println(strCurrentLine);
 			}
+			br.close();
 		} catch (Exception ex) {
 			ex.printStackTrace();
 		} finally {
