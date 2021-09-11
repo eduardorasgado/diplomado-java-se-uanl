@@ -51,4 +51,10 @@ public class Persona implements Serializable {
 	public void setDireccion(String direccion) {
 		this.direccion = direccion;
 	}
+
+	@Override
+	public String toString() {
+		return "Persona [nombre=" + nombre + ", apPaterno=" + apPaterno + ", apMaterno=" + apMaterno + ", direccion="
+				+ direccion + "]";
+	}
 }
