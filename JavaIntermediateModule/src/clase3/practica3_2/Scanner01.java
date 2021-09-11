@@ -20,5 +20,6 @@ public class Scanner01 {
 		System.out.println("Introduzca un número entero: ");
 		n = sc.nextInt();
 		System.out.println("El cuadrado es: " + Math.pow(n, 2));
+		sc.close();
 	}
 }
