@@ -21,6 +21,7 @@ public class Archivo02 {
 				+ separator
 				+ "Archivos"
 				+ separator);
+		
 		String nombre;
 		System.out.println("Introduce el nombre del archivo a eliminar: ");
 		nombre = scanner.nextLine();
@@ -41,6 +42,7 @@ public class Archivo02 {
 				System.out.println("Archivo eliminado");
 			}
 		}
+		
+		scanner.close();
 	}
-
 }
