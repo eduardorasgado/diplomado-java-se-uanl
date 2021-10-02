@@ -5,11 +5,11 @@ import java.util.Arrays;
 import java.util.Calendar;
 import java.util.Date;
 import java.util.GregorianCalendar;
-import java.util.HashMap;
 import java.util.List;
 import java.util.Locale;
-import java.util.Map;
 import java.util.Random;
+import java.util.SortedMap;
+import java.util.TreeMap;
 
 /**
  * Implementación de una agenda de 365 dias que guarda una lista de determinadas actividades, por fecha, por
@@ -46,10 +46,10 @@ public class JavaUtilsDemo {
 	 */
 	public static void main(String[] args) {
 		short daysInAYear = 365;
-		Map<Date, List<String>> agenda  = new HashMap<Date, List<String>>();
+		SortedMap<Date, List<String>> agenda  = new  TreeMap<Date, List<String>>();
 		
 		Calendar calendarInstance = GregorianCalendar.getInstance();
-		Calendar date = new GregorianCalendar(2021, 0, 1);
+		Calendar date = new GregorianCalendar(2021, 0, 0);
 		
 		System.out.println("---------------- INITIALIZING AGENDA DATES(" + daysInAYear +" days)-------------------");
 		for(int i = 0; i < daysInAYear; i++) {
